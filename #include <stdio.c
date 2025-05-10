@@ -10,6 +10,8 @@ int main(){
     float area;
     float PIB;
     int numerodepontosturisticos;
+    float densidadepopulacional;
+    float PIBpercapita;
 
 
     int CARTA1;
@@ -20,6 +22,8 @@ int main(){
     float AREA1;
     float PIB1;
     int NUMERODEPONTOSTURISTICOS1;
+    float DENSIDADEPOPULACIONAL1;
+    float PIBPERCAPITA1;
     
     //entrda e saida de dados com a interacao do usuario
     
@@ -47,18 +51,26 @@ int main(){
     printf("numero de pontos turisticos:"); 
     scanf("%d",&numerodepontosturisticos);
 
+
+
+  PIBpercapita = populacao / area;
+  densidadepopulacional = PIB / area;
+
+
    printf("carta:%d\n",carta);
    printf("estado:%s\n",estado);
    printf("cidade:%s\n",cidade);   //saida de dados mostrando o que o usuario digitou
    printf("codigo:%s\n",codigo);
    printf("populacao:%d\n",populacao);
-   printf("area:%f\n",area);
-   printf("PIB:%f\n",PIB);
-   printf("numero de pontos turisticos:%d\n\n",numerodepontosturisticos);
+   printf("area:%.2f\n",area);
+   printf("PIB:%.2f\n",PIB);
+   printf("numero de pontos turisticos:%d\n",numerodepontosturisticos);
+   printf("A densidade populacional é: %.2f\n",densidadepopulacional);
+   printf("O PIB per capita é:%.2f\n\n",PIBpercapita);
 
-   //entrada e saida de dados com a interacao do usuario
+   //entrada e saida de dado:com a interacao do usuario
    
-   printf("numero da carta:");
+    printf("numero da carta:");
     scanf("%d",&CARTA1);
 
     printf("digite o estado:");
@@ -82,6 +94,10 @@ int main(){
     printf("numero de pontos turisticos:"); 
     scanf("%d",&NUMERODEPONTOSTURISTICOS1);
 
+
+    PIBPERCAPITA1 = POPULACAO1 / AREA1;
+    DENSIDADEPOPULACIONAL1 = PIB1 / AREA1;
+
    printf("carta:%d\n",CARTA1);
    printf("estado:%s\n",ESTADO1);
    printf("cidade:%s\n",CIDADE1);
@@ -89,7 +105,9 @@ int main(){
    printf("populacao:%d\n",POPULACAO1);
    printf("area:%f\n",AREA1);
    printf("PIB:%f\n",PIB1);
-   printf("numero de pontos turisticos:%d\n\n",NUMERODEPONTOSTURISTICOS1);
+   printf("numero de pontos turisticos:%d\n",NUMERODEPONTOSTURISTICOS1);
+   printf("A densidade populacional é:%.2f\n",DENSIDADEPOPULACIONAL1);
+   printf("O PIB per capita é:%.2f\n\n",PIBPERCAPITA1);
    
 
     return 0;
