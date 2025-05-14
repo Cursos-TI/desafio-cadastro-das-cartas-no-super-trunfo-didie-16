@@ -53,8 +53,8 @@ int main(){
 
 
 
-  PIBpercapita = populacao / area;
-  densidadepopulacional = PIB / area;
+   PIBpercapita = populacao / area;
+   densidadepopulacional = PIB / area;
 
 
    printf("carta:%d\n",carta);
