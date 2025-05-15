@@ -12,11 +12,12 @@ int main(){
     int numerodepontosturisticos;
     float densidadepopulacional;
     float PIBpercapita;
+    float superpoder;
 
 
     int CARTA1;
-    char ESTADO1 [50];   //são as variaveis da segunda carta e seus respectivos nomes 
-    char CODIGO1 [10];
+    char ESTADO1[50];   //são as variaveis da segunda carta e seus respectivos nomes 
+    char CODIGO1[10];
     char CIDADE1[50];
     int POPULACAO1;
     float AREA1;
@@ -24,6 +25,7 @@ int main(){
     int NUMERODEPONTOSTURISTICOS1;
     float DENSIDADEPOPULACIONAL1;
     float PIBPERCAPITA1;
+    float SUPERPODER1
     
     //entrda e saida de dados com a interacao do usuario
     
@@ -55,6 +57,7 @@ int main(){
 
    PIBpercapita = populacao / area;
    densidadepopulacional = PIB / area;
+   superpoder = populacao + area + PIB + numerodepontosturisticos + densidadepopulacional + PIBpercapita;
 
 
    printf("carta:%d\n",carta);
@@ -97,18 +100,30 @@ int main(){
 
     PIBPERCAPITA1 = POPULACAO1 / AREA1;
     DENSIDADEPOPULACIONAL1 = PIB1 / AREA1;
+    SUPERPODER1 = POPULACAO1 + AREA1 + PIB1 + NUMERODEPONTOSTURISTICOS1 + DENSIDADEPOPULACIONAL1 + PIBPERCAPITA1;
 
    printf("carta:%d\n",CARTA1);
    printf("estado:%s\n",ESTADO1);
    printf("cidade:%s\n",CIDADE1);
    printf("codigo:%s\n",CODIGO1);
    printf("populacao:%d\n",POPULACAO1);
-   printf("area:%f\n",AREA1);
-   printf("PIB:%f\n",PIB1);
+   printf("area:%.2f\n",AREA1);
+   printf("PIB:%.2f\n",PIB1);
    printf("numero de pontos turisticos:%d\n",NUMERODEPONTOSTURISTICOS1);
    printf("A densidade populacional é:%.2f\n",DENSIDADEPOPULACIONAL1);
    printf("O PIB per capita é:%.2f\n\n",PIBPERCAPITA1);
+
+   printf("populacao e a POPULACAO:%u\n", populacao > POPULACAO1); 
+   printf("area e a AREA:%.1f\n", area > AREA1);
+   printf("PIB E O PIB:%.1f\n", PIB > PIB1);
+   printf("numero de pontos turisticos e o  NUMERO DE PONTOS TURRISTICOS:%d\n", numerodepontosturisticos > NUMERODEPONTOSTURISTICOS1);
+   printf("A densidade populacional e a DENSIDADE POPULACIONAL:%.1f\n", densidadepopulacional < DENSIDADEPOPULACIONAL1);
+   printf("O PIB pe capita e o PIB PER CAPITA:%.1f\n", PIBpercapita > PIBPERCAPITA1);
+   printf("O super poder e o SUPER PODER:%.1f\n", superpoder > SUPERPODER1);
+
    
 
     return 0;
+
 }
+
